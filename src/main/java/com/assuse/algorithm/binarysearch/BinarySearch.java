@@ -83,11 +83,16 @@ public class BinarySearch {
         }
     }
 
+    /**
+     * 使用二分查找算法找出arrays数组中8的位置
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-        int[] arrays = new int[]{1, 2, 3, 4, 5, 6, 7, 9};
-        int key = 6;
+        int[] arrays = new int[]{2, 8, 12, 18, 20, 25, 30, 37, 41, 49, 61};
+        int key = 8;
         int low = 0;
-        int high = 6;
+        int high = arrays.length - 1;
         // 非递归查找
         int i = unRecursiveBinarySearch(arrays, key);
         System.out.println("非递归查找，索引值为：" + i);
