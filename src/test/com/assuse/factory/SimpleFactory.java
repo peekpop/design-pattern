@@ -1,7 +1,7 @@
-package com.factory;
+package com.assuse.factory;
 
-import com.factory.factory.SimpleSendFactory;
-import com.factory.service.Sender;
+import com.assuse.factory.factory.SimpleSendFactory;
+import com.assuse.factory.service.Sender;
 
 /**
  * @Author: XiaJianLong

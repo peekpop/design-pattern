@@ -1,4 +1,4 @@
-package com.singleton;
+package com.assuse.singleton;
 
 /**
  * @Author: XiaJianLong

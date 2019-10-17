@@ -1,4 +1,4 @@
-package com.factory.service;
+package com.assuse.factory.service;
 
 /**
  * @Author: XiaJianLong

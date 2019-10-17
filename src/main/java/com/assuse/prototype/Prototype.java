@@ -1,4 +1,4 @@
-package com.prototype;
+package com.assuse.prototype;
 
 import java.io.*;
 

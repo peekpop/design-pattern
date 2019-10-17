@@ -1,8 +1,8 @@
-package com.factory.factory;
+package com.assuse.factory.factory;
 
-import com.factory.service.Sender;
-import com.factory.service.impl.MailSender;
-import com.factory.service.impl.SmsSender;
+import com.assuse.factory.service.Sender;
+import com.assuse.factory.service.impl.MailSender;
+import com.assuse.factory.service.impl.SmsSender;
 
 /**
  * @Author: XiaJianLong

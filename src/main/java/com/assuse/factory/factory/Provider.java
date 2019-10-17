@@ -1,6 +1,6 @@
-package com.factory.factory;
+package com.assuse.factory.factory;
 
-import com.factory.service.Sender;
+import com.assuse.factory.service.Sender;
 
 /**
  * @Author: XiaJianLong
