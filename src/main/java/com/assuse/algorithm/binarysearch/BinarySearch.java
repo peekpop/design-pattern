@@ -20,7 +20,7 @@ public class BinarySearch {
      * 说明：要查询数组为偶数个时，需向下取整
      * <br/>
      */
-    public static int binarySearch(int[] arrays, int key) {
+    public static int unRecursiveBinarySearch(int[] arrays, int key) {
         // 头指针初始位置
         int low = 0;
         // 尾指针初始位置
@@ -89,7 +89,7 @@ public class BinarySearch {
         int low = 0;
         int high = 6;
         // 非递归查找
-        int i = binarySearch(arrays, key);
+        int i = unRecursiveBinarySearch(arrays, key);
         System.out.println("非递归查找，索引值为：" + i);
         // 递归查找
         int recursiveInt = recursiveBinarySearch(arrays, low, high, key);
