@@ -57,16 +57,13 @@ public class BinarySearch {
      * @param high   尾指针初始位置
      * @param key    要查找的数
      * @return
-     * @Description: 中间索引值计算方式有以下两种<br>
+     * @Description: <br/>
      * int mid = low + (high - low) / 2;
-     * <p>
-     * //防止溢出
-     * int mid = (high + low) >>> 1;
-     * <br/>
+     * 此算法不存在溢出问题，因为他能保证计算出来的mid，一定是大于low，小于high的。
      */
     public static int recursiveBinarySearch(int[] arrays, int low, int high, int key) {
-        // 计算中间索引值，防止溢出
-        int mid = (high + low) >>> 1;
+        // 计算中间索引值
+        int mid = low + (high - low) / 2;
 
         // 判断查找的数是否在数组中;
         // 如果此处不加判断，则有可能报 java.lang.StackOverflowError栈内存溢出
@@ -92,8 +89,9 @@ public class BinarySearch {
         int high = 6;
         // 非递归查找
         int i = binarySearch(arrays, key);
-        System.out.println(i);
+        System.out.println("非递归查找，索引值为：" + i);
+        // 递归查找
         int recursiveInt = recursiveBinarySearch(arrays, low, high, key);
-        System.out.println(recursiveInt);
+        System.out.println("递归查找，索引值为：" + recursiveInt);
     }
 }
