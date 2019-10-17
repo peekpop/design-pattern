@@ -17,6 +17,7 @@ public class BinarySearch {
      * <p>
      * //防止溢出
      * int mid = (high + low) >>> 1;
+     * 说明：要查询数组为偶数个时，需向下取整
      * <br/>
      */
     public static int binarySearch(int[] arrays, int key) {
@@ -83,7 +84,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] arrays = new int[]{1, 2, 3, 4, 5, 6, 7};
+        int[] arrays = new int[]{1, 2, 3, 4, 5, 6, 7, 9};
         int key = 6;
         int low = 0;
         int high = 6;
