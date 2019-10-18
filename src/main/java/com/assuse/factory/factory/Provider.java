@@ -3,8 +3,8 @@ package com.assuse.factory.factory;
 import com.assuse.factory.service.Sender;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 13:32 2018/6/7
  * @Description: 消息提供处理接口
  */

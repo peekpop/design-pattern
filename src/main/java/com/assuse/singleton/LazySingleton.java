@@ -1,8 +1,8 @@
 package com.assuse.singleton;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 13:54 2018/6/7
  * @Description: 单子模式之懒汉式(有线程安全问题)
  * 在需要单例对象的时候，才创建唯一的单例对象，以后再次调用，返回的也是第一创建的单例对象

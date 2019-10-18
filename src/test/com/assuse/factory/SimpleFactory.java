@@ -4,8 +4,8 @@ import com.assuse.factory.factory.SimpleSendFactory;
 import com.assuse.factory.service.Sender;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 12:49 2018/6/7
  * @Description: 简单工厂模式测试类
  */

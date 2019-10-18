@@ -3,8 +3,8 @@ package com.assuse.prototype;
 import java.io.*;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 14:39 2018/6/7
  * @Description: 原型模式
  */

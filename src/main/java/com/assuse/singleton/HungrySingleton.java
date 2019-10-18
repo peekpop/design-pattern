@@ -1,8 +1,8 @@
 package com.assuse.singleton;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 13:49 2018/6/7
  * @Description: 单子模式之饿汉式
  * 饿汉式不管以后用不用这个对象，我们一开始就创建这个对象的实例，

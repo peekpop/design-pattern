@@ -4,8 +4,8 @@ import com.assuse.factory.service.Sender;
 import com.assuse.factory.service.impl.MailSender;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 13:35 2018/6/7
  * @Description: 邮件发送工厂
  */

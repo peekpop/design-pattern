@@ -1,8 +1,8 @@
 package com.assuse.factory.service;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 12:52 2018/6/7
  * @Description: 消息处理接口
  */

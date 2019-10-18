@@ -5,8 +5,8 @@ import com.assuse.factory.factory.Provider;
 import com.assuse.factory.service.Sender;
 
 /**
- * @Author: XiaJianLong
- * @company: ChinaExpress
+ * @Author: www.assuse.com
+ * @company:
  * @Date: Created in 13:27 2018/6/7
  * @Description: 工厂方法模板测试
  */
