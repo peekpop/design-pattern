@@ -3,6 +3,7 @@ package com.assuse.singleton;
 /**
  * @Author: www.assuse.com
  * @company:
+ * @link www.assuse.com
  * @Date: Created in 14:23 2018/6/7
  * @Description: 单子模式测试
  */
