@@ -103,8 +103,8 @@ public class ConcreteSubject extends Subject{
     public String getState() {
         return state;
     }
-
-	@Override
+    
+    @Override
     public void change(String newState) {
         state = newState;
         System.out.println("被观察者状态为:"+newState);
