@@ -131,3 +131,89 @@ public class Client{
     }
 }
 ```
+## 推/拉模型
+> 观察者模式中可以分为推模型和拉模型两种。
+
+- **推模型**是被观察者向观察者推送观察目标的详细信息，不管观察者是否需要，推送的信息通常是被观察者对象的全部或部分数据。
+- **拉模型**当被观察者通知观察者时，只传递少量信息，如果观察者需要更加详细的信息，由观察者主动到观察目标中获取，相当于时观察者从主题对象中拉去数据。这种方式一般把被观察者自身通过update传递给观察者，获取数据时时直接通过这个被观察者引用获取
+
+**推/拉模型比较：** 推模型是假定被观察者知道观察者需要的数据，主动推送相关的数据，但是当不同的观察者需要不同的数据时候会出现麻烦，因为不能根据每一个不同的观察者提供不同的数据，或者提供新的update方法
+拉模型是直接把被观察者的引用传递，观察者按需要从中获取数据，适用情况比推模型要广。
+
+
+### 拉模型实例
+
+**定义观察者接口**
+```java
+public interface Observer{
+    /**
+     * 每当观察对象发生更改时，都会调用此方法。
+     *
+     * @param subject  抽象目标类/主题类
+     */
+    void update(Subject subject);
+}
+```
+  
+**观察者接口实现**
+```java
+public class PlayerObserver implements Observer{
+    public String state;
+    public String name;
+    
+    // 构造器
+    public Player(String name,String state) {
+        this.name = name;
+        this.state = state;
+    }
+    
+    @Override
+    public void update(Subject subject) {
+        System.out.println("战队成员"+name+"状态更新为"+subject.getState());
+    }
+}
+```
+
+**抽象主题类定义**
+
+```java
+@Data
+public abstract class Subject {
+    private String state;
+    
+    private List<Observer> list = new ArrayList<>();
+    
+    public void attach(Observer observer) {
+        list.add(observer);
+    }
+
+    public void detach(Observer observer) {
+        list.remove(observer);
+    }
+
+    /**
+     * 通知所有监听者
+     * 
+     * 主要改变是多了一个state成员，同时去掉 notifyObservers() 中的参数
+     */
+    public void notifyObservers() {
+        System.out.println("基地通知所有战队成员");
+        list.forEach(t -> t.update(this));
+    }
+
+    public abstract void change(String newState);
+}
+```
+
+**抽象主题类具体实现**
+```java
+public class ConcreteSubject extends Subject {
+    @Override
+    public void change(String newState) {
+        // subject类中的 setState() 方法
+        setState(newState);
+        System.out.println("基地状态更新为:" + newState);
+        notifyObservers();
+    }
+}
+```

@@ -13,8 +13,12 @@ public class PlayerController {
 
         // 目标类/主题类创建
         Subject subject = new ConcreteSubject();
+
+        // 观察者对象注册到主题类上
         subject.attach(player1);
         subject.attach(player2);
+
+        // 改变主题类对象状态
         subject.change("警戒状态");
     }
 }
