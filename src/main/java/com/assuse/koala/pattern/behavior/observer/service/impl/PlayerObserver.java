@@ -3,7 +3,7 @@ package com.assuse.koala.pattern.behavior.observer.service.impl;
 import com.assuse.koala.pattern.behavior.observer.service.Observer;
 
 /**
- * 玩家观察者
+ * 具体观察者 -> 玩家观察者
  */
 public class PlayerObserver implements Observer {
     public String state;
