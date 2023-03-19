@@ -1,7 +1,7 @@
 package com.assuse.koala.pattern.behavior.observer.abs;
 
 /**
- * 被观察者主题类实现
+ * 具体主题者 -> 被观察者主题类实现
  */
 public class ConcreteSubject extends Subject {
     private String state;
